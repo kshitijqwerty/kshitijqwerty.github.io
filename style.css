@@ -306,10 +306,13 @@ img
 {
     background: #111;
     display: none;
+    flex-direction: column;
+    align-items: center;
 }
-.mapBx
+.mapBx img
 {
-    min-width: 60%;
+    min-width: 50%;
+    max-height: 500px;
 }
 .contactinfo
 {
@@ -318,7 +321,7 @@ img
 }
 .contactinfobx
 {
-    position: relative;
+    position:relative;
 }
 .contactinfobx .box
 {
@@ -479,6 +482,7 @@ img
     .content
     {
         flex-direction: column;
+        align-items: center;
     }
     .w50
     {
