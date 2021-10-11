@@ -1,0 +1,502 @@
+@import url('http://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*
+{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+section
+{
+    padding: 50px;
+    min-height: 100vh;
+}
+/* .loader
+{
+    display: grid;
+    top: 0px;
+    z-index: 700;
+    opacity: 0;
+} */
+.banner
+{
+    position: relative;
+    min-height: 100vh;
+    background: #111;
+    background-size: cover ;
+    display: flex;
+    /* flex-direction:column; */
+    /* justify-content: space-between;  */
+    justify-content: space-evenly;
+    align-items: center;
+
+}   
+.banner img
+{
+    height: 300px;
+    border-radius: 50%;
+}
+.banner h2
+{
+    font-size: 3em;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+.banner h2 span
+{
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.banner h3
+{
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+header
+{
+    position: fixed;
+    top :0;
+    background: #111;
+    left: 0;
+    width: 100%;
+    padding: 0px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.5s;
+}
+header.sticky
+{
+    background: #fff;
+    padding: 0px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+header.sticky .logo
+{
+    color: #111;
+}
+header .logo
+{
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+header ul
+{
+    position: relative;
+    display: flex;
+}
+header ul li
+{
+    position: relative;
+    list-style: none;
+    
+}
+th{
+    font-size: 25px;
+    font-weight: 100;
+}
+th,td {
+        text-align: center;
+        padding: 10px;
+      }
+td h2{
+    font-size: 20px;
+}
+
+header ul li a
+{
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-inline: 10px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+header ul li a:hover
+{
+    background: #fff;
+    color: #111;
+}
+header.sticky ul li a
+{
+    color: #111;
+}
+header.sticky ul li a:hover
+{
+    background: #111;
+    color: #fff;
+}
+footer
+{
+    position: fixed;
+    bottom :0;
+    background: #111;
+    left: 0;
+    width: 100%;
+    padding: 0px 100px;
+    padding-top: 5px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    transition: 0.5s;
+}
+footer img
+    {
+        filter: invert(1);
+        height: 30px;
+    }
+footer .time
+{
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+footer.sticky
+{
+    background: #fff;
+    padding: 0px 100px;
+    padding-top: 5px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+footer.sticky div
+{
+    color: #111;
+
+}
+footer.sticky img
+{
+    filter: invert(0);
+    height: 30px;
+
+}
+
+footer div
+{
+    color: #fff;
+}
+
+.heading
+{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #111;
+}
+.heading h2
+{
+    font-weight: 600;
+    font-size: 30px;
+}
+.content
+{
+    display: flex;
+    
+    justify-content: space-between;
+
+}
+.contentBx
+{
+    padding-right: 30px;
+}
+.contentBx h3
+{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.w50
+{
+    min-width: 50%;
+}
+img
+{
+    max-width: 100%;
+}
+.about
+{
+    display: none;
+}
+.about .content .contentBx p
+{
+    font-size: 1.5em;
+}
+.pubs
+{
+    display: none;
+    align-items: center;
+}
+.pubs .content
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    
+}
+
+.education
+{
+    background: #111;
+    display: none;
+}
+.heading.white
+{
+    color: #fff;
+}
+.education .content
+{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.education .content .edubx
+{
+    padding: 40px 20px;
+    background: #222;
+    color: #fff;
+    /* max-width: 90vw; */
+    justify-content: space-between;
+    width: 20em;
+    height: 25em;
+    margin: 20px;
+    text-align: center;
+    transition: 0.5s;
+} 
+.education .content .edubx:hover
+{
+    background: #2196f3;
+}
+.education .content .edubx img
+{
+    width: 220px;
+    height: 220px;
+    object-fit: contain;
+}
+.education .content .edubx h2
+{
+    font-size: 20px ;
+    font-weight: 600;
+    padding-top: 1.5em;
+}
+.education .content .edubx h3
+{
+    font-size: 18px;
+    font-weight: 500;
+}
+.education .content a
+{
+    text-decoration: none;
+}
+.contact
+{
+    background: #111;
+    display: none;
+}
+.mapBx
+{
+    min-width: 60%;
+}
+.contactinfo
+{
+    min-width: 40%;
+
+}
+.contactinfobx
+{
+    position: relative;
+}
+.contactinfobx .box
+{
+    position: relative
+    padding 20px 0;
+    margin-top: 20px;
+    display: flex;
+}
+.contactinfobx .box .icon
+{
+    min-width: 40px;
+    padding-top: 4px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+.contactinfobx .box .text
+{
+
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: 300;
+}
+.contactinfobx .box .text h3
+{
+    font-weight: 500;
+    color: #2196f3;
+    margin-bottom: 0;
+}
+.mapBx h3, .contactinfo h3
+{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.map
+{
+    margin-top: 20px;
+}
+#map {
+    height: 400px;
+    width: 100%;
+  }
+
+
+
+@media (max-width:991px) 
+{
+    header,
+    header.sticky
+    {
+        padding: 20px 50px;
+        z-index: 1000;
+    }
+    .menu
+    {
+        position: fixed;
+        top: 75px;
+        left: -100%;
+        display: block;
+        padding: 100px 50px;
+        text-align: center;
+        width:100%;
+        height:100%;
+        background: #fff;
+        transition:0.5s;
+        z-index: 999;
+        border-top: 1px solid rgb(0, 0, 0,0.2);
+
+    }
+    .menu.active
+    {
+        left: 0;
+    }
+    header ul li a {
+        color: #111;
+        font-size: 24px;
+        margin: 10px;
+    }
+    .toggle
+    {
+        width: 40px;
+        height: 40px;
+        background: url(menu.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor:pointer ;
+
+    }
+    .toggle.active
+    {
+        background: url(close.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 25px;
+        cursor:pointer ;
+    }
+    header.sticky .toggle
+    {
+        filter: invert(1);
+    }
+    footer
+    {
+        /* flex-direction: column; */
+        align-items: center;
+    }
+    
+    footer .time
+    {
+        font-size: 14px;
+        font-weight: 600;
+    }
+    footer img
+    {
+        height: 40px;
+        margin-inline: 10px;
+    }
+    footer.sticky img
+    {
+        height: 40px;
+    }
+    section{
+        padding:100px 50px;
+    }
+    .banner
+    {
+        padding: 150px 50px 100px;
+        flex-direction: column;
+    }
+    .banner img
+    {
+        scale: 1.2;
+    }
+    .banner h2
+    {
+        font-size: 1.5em;
+    }
+    .banner h3
+    {
+        font-size: 1em;
+    }
+    .heading h2
+    {
+        font-weight: 600;
+        font-size: 24px;
+    }
+    .contentBx h3
+    {
+        font-size: 20px;
+    }
+    .content
+    {
+        flex-direction: column;
+    }
+    .w50
+    {
+        margin-bottom: 20px;
+    }
+    .education .content .edubx
+    {
+        margin: 10px;
+    }
+}
+@media (max-width: 600px)
+{
+    header,
+    header.sticky
+    {
+        padding: 20px 20px;
+    }
+    .banner{
+        padding: 150px 50px 100px;
+    }
+}

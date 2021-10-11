@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head onload="clockTick()">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-*">
+    <title>K. Gupta</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.0/css/all.css" >
+    <script src="jscript.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href=" site.webmanifest">
+</head>
+<header>
+    <a href="#" onclick="t1()" class="logo">K. Gupta</a>
+    <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="menu">
+            <li ><a href="#" onclick="t1();">Home</a></li>
+            <li><a href="#" onclick="t2();">About</a></li>
+            <li><a href="#" onclick="t3();">Education</a></li>
+            <li><a href="#" onclick="t4();">Projects</a></li>
+            <li><a href="#" onclick="t5();">Contact</a></li>
+        </ul>
+</header>
+<footer>
+    <div href="#" class="time" id="date" too></div>
+    <div href="#" class="time" id="time"></div>
+    <div>
+        <a href="https://github.com/kshitijqwerty"><img src="git.png" ></a>
+        <a href="https://www.linkedin.com/in/horz7"><img src="link.png" ></a>
+    </div>
+</footer>
+<!-- <section class="loader" id="0"></section> -->
+<section class="banner" id="1">
+    <img src="me.jpeg" alt="Kshitij Gupta">
+    <div class="textBx">
+        <h2>Hello, I'm<br><span>Kshitij Gupta</span></h2>
+        <!-- <h3>Pursuing M.Tech from IIIT- Hyderabad.</h3> -->
+    </div>
+    
+</section>
+<section class="about" id="2">
+    <div class="heading">
+        <h2>About Me</h2>
+    </div>
+    <div class="content">
+        <div class="contentBx">
+            <p>
+                I am currently pursuing Masters of Technology in Computer Science from IIIT - Hyderabad. 
+                <br>
+                <br>I did my Bachelors of Technology in Computer Science from IIIT-Delhi.
+                <br>
+                <br>My interests lie in Computer Vision and Machine Learning and I want to pursure research in this domain.
+                <br>
+                <br>I usually spend my leisure time playing games and watching TV Shows and sometimes Movies.
+                <br>
+                <br> <a href="http://horz.ydns.eu/cv.pdf">Link to my CV</a>
+            </p>
+        </div>
+    </div>
+</section>
+<section class="education" id="3">
+    <div class="heading white">
+        <h2>Education</h2>
+    </div>
+    <div class="content">
+        <a href="https://www.iiit.ac.in">
+        <div class="edubx">
+            <div class="img">
+                <img src="http://horz.ydns.eu/iiit_logo_white.png" alt="IIITH" >    
+            </div>
+            
+            <h2>IIIT-Hyderabad</h2>
+            <h3>CGPA: Upto you TAs :)</h3>
+            <p>2021 - Current</p>
+        
+        </div>
+        </a>
+        <a href="https://www.iiitd.ac.in">
+        <div class="edubx">
+            <div class="img">
+                <img src="http://horz.ydns.eu/iiitd.png" alt="IIITD">  
+            </div>
+            <h2>IIIT-Delhi</h2>
+            <h3>CGPA: 7.14</h3>
+            <p>2015-2019</p>
+        </div>
+        </a>
+        <a href="https://www.smaps.in">
+        <div class="edubx">
+            <div class="img">
+            <img src="http://horz.ydns.eu/smarya.gif" alt="SM Arya">  
+        </div>
+            <h2>SM Arya Public School</h2>
+            <h3>Percentage: 93.2%</h3>
+            <p>2013-2015</p>
+        </div>
+        </a>
+        <a href="https://tagoreint.com/eok/V2.0/">
+        <div class="edubx">
+            <div class="img" alt="TIS EoK">
+            <img src="http://horz.ydns.eu/tis.jpeg">  
+        </div>
+            <h2>Tagore Internation School</h2>
+            <h3>CGPA: 9.8</h3>
+            <p>2001-2013</p>
+        </div>
+        </a>
+    </div>
+</section>
+<section class="pubs" id="4">
+    <div class="heading">
+        <h2>Projects</h2>
+        <!-- <p>These are some of the projects I did</p> -->
+
+    </div>
+    <table style="width:100%">
+        <tr>
+          <th colspan="2">These are some of the projects I did</th>
+        </tr>
+        <tr>
+          <td><h2>The Blue Whale Challenge</h2></td>
+          <td><h2>Road Detection using Computer Vision</h2></td>
+        </tr>
+        <tr>
+          <td>The project aimed at analyzing social profiles which could be the possible victims of the challenge, and if possible detect curators and propagators. We also analyzed the working and statistics of the game.</td>
+          <td>Task was to detect roads using computer vision techniques using color (HSV features) and texture (Haralick features) based features. For some comparison, a CNN model (FCN and SegNet) was used for accuracy and speed.</td>
+        </tr>
+        <tr>
+            <td><h2>DBLP Query Search Engine</h2></td>
+            <td><h2>Smart Home Security System</h2></td>
+        </tr>
+        <tr>
+            <td>Project was based on XML Parsing a large file(around 10GB) and populate the results in a clean GUI interface.It featured a specific defined queries accompanied by prediction of few results. Implemented in Java.</td>
+            <td>Made a project based on Raspberry Pi backed by Python, which served as a surveillance and security system through Internet and GSM protocols. It featured periodic camera recording sent via email and controlling locks and lights using GSM protocol.</td>
+        </tr>
+      </table>
+    
+    <!-- <div class="content">
+        <div>
+            <h2>The Blue Whale Challenge: Decrypting the secret</h2>
+            <p>The project aimed at analyzing social profiles which could be the possible victims of the challenge, and if possible detect curators and propagators. We also analyzed the working and statistics of the game.<br><br></p>
+        </div>
+        <div>
+            <h2>Road Detection using Computer Vision</h2>
+            <p>Task was to detect roads using computer vision techniques using color (HSV features) and texture (Haralick features) based features. For some comparison, a CNN model (FCN and SegNet) was used for accuracy and speed.<br><br></p>
+        </div>
+        <div>
+            <h2>DBLP Query Search Engine</h2>
+            <p>Project was based on XML Parsing a large file(around 10GB) and populate the results in a clean GUI interface.It featured a specific defined queries accompanied by prediction of few results. Implemented in Java.<br><br></p>
+        </div>
+        <div>
+            <h2>Smart Home Security System</h2>
+            <p>Made a project based on Raspberry Pi backed by Python, which served as a surveillance and security system through Internet and GSM protocols. It featured periodic camera recording sent via email and controlling locks and lights using GSM protocol.<br><br></p>
+        </div> -->
+        
+        
+    </div>
+</section>
+<section class="contact" id="5">
+    <div class="heading white">
+        <h2>Contact Me</h2>
+    </div>
+    <div class="content">
+        <div class="contactinfo">
+            <h3>Contact Info</h3>
+            <div class="contactinfobx">
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa fa-map-marker-alt"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>Dwarka Sector 9,<br>New Delhi,<br>110077</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa fa-phone-alt"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>+91 99100-36076</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa fa-envelope"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>kshitij.g@students.iiit.ac.in</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="mapBx">
+            <h3>My Location</h3>
+            <div id="map" class="map"></div>
+        </div>
+    </div>
+</section>
+
+<script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&libraries=&v=weekly&channel=2"
+      async
+    >
+</script>
+
+
+</html>
